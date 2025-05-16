@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Resources</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why Solar Matters</a></li>
+        <li><a href="economic.html">Economic Impact</a></li>
+        <li><a href="environment.html">Environmental Impact</a></li>
+        <li><a href="challenges.html">Challenges & Future</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="challenges.html" class="nav-arrow left-arrow" aria-label="Previous Page"></a>
+  <a href="index.html" class="nav-arrow right-arrow" aria-label="Next Page"></a>
+
+  <main class="content">
+    <div class="stats-grid">
+      <section class="card fade-in">
+        <h2>Explore More About Solar</h2>
+        <ul>
+          <li><strong>Focus on Energy:</strong> Offers rebates up to $2,000 and free consultations for solar adoption. <a href="https://focusonenergy.com" target="_blank" class="resource-link">focusonenergy.com</a></li>
+          <li><strong>RENEW Wisconsin:</strong> Advocates for solar policies and shares local project updates. <a href="https://renewwisconsin.org" target="_blank" class="resource-link">renewwisconsin.org</a></li>
+          <li><strong>EPA Solar for All:</strong> Provides grants for low-income solar access. <a href="https://epa.gov" target="_blank" class="resource-link">epa.gov</a></li>
+          <li><strong>DSIRE:</strong> Lists Wisconsin’s solar incentives and tax credits. <a href="https://dsireusa.org" target="_blank" class="resource-link">dsireusa.org</a></li>
+          <li><strong>Wisconsin Solar Energy Association:</strong> Connects residents with local solar installers. <a href="https://wisolar.org" target="_blank" class="resource-link">wisolar.org</a></li>
+        </ul>
+        <p><strong>Download:</strong> <a href="solar-facts-wi.pdf" target="_blank" class="resource-link">Solar Facts for Wisconsin (PDF)</a></p>
+        <div class="card-reveal">
+          <p><strong>Tip:</strong> Use DSIRE’s database to find local utility rebates specific to your Wisconsin county.</p>
+        </div>
+        <p class="source">Source: Compiled from respective organizations, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3 class="faq-question">Is solar effective in Wisconsin?</h3>
+            <div class="faq-answer">
+              <p>Yes, Wisconsin’s solar panels generate 1,200 kWh per kW annually, effective even in cloudy or cold conditions, thanks to modern panel technology.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How much solar do I need?</h3>
+            <div class="faq-answer">
+              <p>Average homes need 6–8 kW systems to offset 100% of their electricity use, depending on consumption.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Can I afford solar?</h3>
+            <div class="faq-answer">
+              <p>With a 30% federal tax credit, state rebates, and financing, solar costs have dropped 50% since 2015, making it accessible for many.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> Solar panels in Wisconsin have a payback period of 7–10 years with current incentives.</p>
+        </div>
+        <p class="source">Source: Wisconsin State Energy Office, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Solar News & Updates</h2>
+        <p>Stay informed with the latest in solar energy:</p>
+        <ul>
+          <li><strong>Wisconsin Solar News:</strong> Tracks projects like the 150 MW Onion River Solar Farm. <a href="https://renewwisconsin.org/blog/" target="_blank" class="resource-link">RENEW Blog</a></li>
+          <li><strong>National Solar News:</strong> Covers U.S. solar trends and policies. <a href="https://www.seia.org/news" target="_blank" class="resource-link">SEIA Newsroom</a></li>
+          <li><strong>Clean Energy Reports:</strong> Offers data on solar’s climate impact. <a href="https://www.nrel.gov/" target="_blank" class="resource-link">NREL.gov</a></li>
+        </ul>
+        <div class="card-reveal">
+          <p><strong>Did You Know?</strong> The Onion River Solar Farm, completed in 2024, powers 40,000 homes annually.</p>
+        </div>
+        <p class="source">Source: Compiled from respective organizations, 2025</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

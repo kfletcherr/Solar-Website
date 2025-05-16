@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economic Impact - Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Economic Impact</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why Solar Matters</a></li>
+        <li><a href="economic.html" class="active">Economic Impact</a></li>
+        <li><a href="environment.html">Environmental Impact</a></li>
+        <li><a href="challenges.html">Challenges & Future</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="environment.html" class="nav-arrow left-arrow" aria-label="Previous Page"></a>
+  <a href="challenges.html" class="nav-arrow right-arrow" aria-label="Next Page"></a>
+
+  <main class="content">
+    <div class="stats-grid">
+      <section class="card fade-in">
+        <h2>Job Creation</h2>
+        <p>Wisconsin’s solar industry employs over 3,000 workers in roles like panel manufacturing, installation, and maintenance. Projects like the Badger Hollow Solar Farm have created hundreds of local jobs, boosting economies in rural areas like Iowa County.</p>
+        <p><strong>In 2025, the solar sector added 500 new jobs, a 15% increase from 2024.</strong> Training programs, such as those offered by Midwest Renewable Energy Association, are preparing workers for these opportunities.</p>
+        <div class="card-reveal">
+          <p><strong>Tip:</strong> Check Midwest Renewable Energy Association for solar job training workshops in Wisconsin.</p>
+        </div>
+        <p class="source">Source: Solar Jobs Census, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Solar Growth Over Time</h2>
+        <div class="chart-container">
+          <canvas id="solarGrowthChart"></canvas>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> Wisconsin’s solar capacity grew 450% from 2020 to 2025, outpacing many Midwest states.</p>
+        </div>
+        <p class="source">Source: U.S. Energy Information Administration (EIA), 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Energy Independence</h2>
+        <img src="images/energy.jpg" alt="Solar farm in rural Wisconsin" class="card-image small">
+        <p>Solar power reduces Wisconsin’s reliance on imported coal and natural gas, with local solar farms generating 3,600 GWh annually. This strengthens grid reliability and keeps energy dollars within the state.</p>
+        <div class="card-reveal">
+          <p><strong>Did You Know?</strong> Local solar farms save Wisconsin $100 million annually in avoided fuel imports.</p>
+        </div>
+        <p class="source">Source: Midwest Renewable Energy Association, 2025</p>
+      </section>
+    </div>
+    <section class="card fade-in full-width">
+      <h2>Cost Savings</h2>
+      <p>Solar panels can save homeowners thousands over their lifetime. Use the calculator below to estimate your savings based on your electricity bill and desired system size.</p>
+      <div class="calculator">
+        <h3>Solar Savings Calculator</h3>
+        <div class="input-group">
+          <label for="monthlyBill">Monthly Electricity Bill ($):</label>
+          <input type="number" id="monthlyBill" value="100" min="0" step="10">
+        </div>
+        <div class="input-group">
+          <label for="systemSize">System Size (kW):</label>
+          <input type="number" id="systemSize" value="6" min="1" step="0.5">
+        </div>
+        <div class="input-group">
+          <label for="lifespan">System Lifespan (Years):</label>
+          <input type="number" id="lifespan" value="20" min="1" step="1">
+        </div>
+        <button onclick="calculateSavings()">Calculate</button>
+        <div id="savingsResult" class="result">
+          <p><strong>Annual Energy Production:</strong> <span id="annualProduction">0</span> kWh</p>
+          <p><strong>Annual Savings:</strong> $<span id="annualSavings">0</span></p>
+          <p><strong>Total Savings (over <span id="resultLifespan">20</span> years):</strong> $<span id="totalSavings">0</span></p>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <p><strong>Tip:</strong> Combine the 30% federal tax credit with Focus on Energy rebates to save up to 40% on installation costs.</p>
+      </div>
+      <p class="source">Source: EnergySage, Wisconsin State Energy Office, 2025</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

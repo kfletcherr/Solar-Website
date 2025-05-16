@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges & Future - Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Challenges & Future</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why Solar Matters</a></li>
+        <li><a href="economic.html">Economic Impact</a></li>
+        <li><a href="environment.html">Environmental Impact</a></li>
+        <li><a href="challenges.html" class="active">Challenges & Future</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="economic.html" class="nav-arrow left-arrow" aria-label="Previous Page"></a>
+  <a href="resources.html" class="nav-arrow right-arrow" aria-label="Next Page"></a>
+
+  <main class="content">
+    <div class="stats-grid">
+      <section class="card fade-in">
+        <h2>Key Challenges</h2>
+        <ul>
+          <li><strong>Weather Variability:</strong> Wisconsin’s cloudy winters reduce solar efficiency by up to 45%, requiring robust system designs.</li>
+          <li><strong>Land Use Conflicts:</strong> Solar farms need 5–10 acres per MW, raising concerns about farmland preservation in counties like Grant.</li>
+          <li><strong>Upfront Costs:</strong> Systems cost $15,000–$25,000, though incentives like the 30% federal tax credit help.</li>
+        </ul>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> Snow-resistant panels can boost winter efficiency by 10–15%.</p>
+        </div>
+        <p class="source">Source: Wisconsin Office of Sustainability, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Solar Efficiency in Wisconsin</h2>
+        <div class="chart-container">
+          <canvas id="efficiencyChart"></canvas>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Tip:</strong> Pair solar panels with smart thermostats to optimize energy use in winter.</p>
+        </div>
+        <p class="source">Source: National Renewable Energy Laboratory (NREL), 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Solutions in Action</h2>
+        <ul>
+          <li><strong>Energy Storage:</strong> Batteries store excess energy, powering homes during low-sunlight periods, as seen in Alliant Energy’s projects.</li>
+          <li><strong>Funding Support:</strong> Focus on Energy offers $500–$2,000 rebates, making solar accessible to more households.</li>
+          <li><strong>Community Solar:</strong> 12 projects, like Madison’s shared solar arrays, serve renters and low-income residents.</li>
+        </ul>
+        <div class="card-reveal">
+          <p><strong>Did You Know?</strong> Madison’s community solar program serves 1,200 households, 30% of which are low-income.</p>
+        </div>
+        <p class="source">Source: Focus on Energy, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>The Future of Solar</h2>
+        <img src="images/future-solar.jpg" alt="Modern solar farm with advanced panels" class="card-image small">
+        <p>By 2030, Wisconsin aims for 4 GW of solar capacity, leveraging 25% efficient panels and grid-scale storage. The state’s 100% carbon-free goal by 2050 positions solar as a key driver of sustainable energy.</p>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> Next-generation panels in 2030 could reach 30% efficiency, cutting costs further.</p>
+        </div>
+        <p class="source">Source: Solar Energy Industries Association (SEIA), 2025</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

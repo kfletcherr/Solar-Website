@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Impact - Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Environmental Impact</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html">Why Solar Matters</a></li>
+        <li><a href="economic.html">Economic Impact</a></li>
+        <li><a href="environment.html" class="active">Environmental Impact</a></li>
+        <li><a href="challenges.html">Challenges & Future</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="why.html" class="nav-arrow left-arrow" aria-label="Previous Page"></a>
+  <a href="economic.html" class="nav-arrow right-arrow" aria-label="Next Page"></a>
+
+  <main class="content">
+    <div class="stats-grid">
+      <section class="card fade-in">
+        <h2>Reducing CO2 Emissions</h2>
+        <p>Solar energy displaced 2.6 million metric tons of CO2 in Wisconsin in 2025, equivalent to removing 550,000 cars from the road for a year. By replacing coal and gas, solar helps combat climate change and improve air quality.</p>
+        <div class="chart-container">
+          <canvas id="emissionsChart"></canvas>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> Solar farms in Wisconsin prevent 1.8 million pounds of air pollutants annually.</p>
+        </div>
+        <p class="source">Source: Environmental Protection Agency (EPA), 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Protecting Land & Water</h2>
+        <img src="images/water.jpg" alt="Solar farm integrated with natural landscape" class="card-image small">
+        <p>Solar farms require less land than coal plants and produce no water pollution. Projects like Two Creeks Solar use native grasses to prevent soil erosion and protect local watersheds.</p>
+        <div class="card-reveal">
+          <p><strong>Did You Know?</strong> Two Creeks Solar’s native grasses support 50+ species of local plants.</p>
+        </div>
+        <p class="source">Source: Wisconsin Department of Natural Resources, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Supporting Wildlife</h2>
+        <img src="images/animal.jpg" alt="Solar farm with pollinator-friendly plants" class="card-image small">
+        <p>Solar sites with pollinator-friendly vegetation, like those in Madison, support bees, butterflies, and birds. These efforts enhance biodiversity and align with Wisconsin’s conservation goals.</p>
+        <div class="card-reveal">
+          <p><strong>Tip:</strong> Homeowners can plant pollinator gardens to complement solar installations.</p>
+        </div>
+        <p class="source">Source: National Renewable Energy Laboratory (NREL), 2025</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Solar Matters - Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Why Solar Matters</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why.html" class="active">Why Solar Matters</a></li>
+        <li><a href="economic.html">Economic Impact</a></li>
+        <li><a href="environment.html">Environmental Impact</a></li>
+        <li><a href="challenges.html">Challenges & Future</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="index.html" class="nav-arrow left-arrow" aria-label="Previous Page"></a>
+  <a href="environment.html" class="nav-arrow right-arrow" aria-label="Next Page"></a>
+
+  <main class="content">
+    <div class="stats-grid">
+      <section class="card fade-in">
+        <h2>Solar Today in Wisconsin</h2>
+        <p>Wisconsin’s solar industry is booming, with over 3,000 MW of installed capacity in 2025, enough to power approximately 450,000 homes. From rooftop installations in Milwaukee to large-scale solar farms in rural Dane County, solar energy is reducing electricity costs and creating sustainable communities.</p>
+        <div class="stats-grid inner-grid">
+          <div class="stat-item">
+            <h3>3,000 MW</h3>
+            <p>Installed solar capacity in 2025.</p>
+          </div>
+          <div class="stat-item">
+            <h3>450,000 Homes</h3>
+            <p>Powered by solar energy annually.</p>
+          </div>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Did You Know?</strong> Milwaukee’s solar installations grew 20% in 2024, driven by urban rooftop projects.</p>
+        </div>
+        <p class="source">Source: Solar Energy Industries Association (SEIA), 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>Why It Matters</h2>
+        <ul>
+          <li><strong>Environmental Impact:</strong> Solar power cuts carbon emissions, helping Wisconsin meet its goal of 100% carbon-free electricity by 2050.</li>
+          <li><strong>Economic Benefits:</strong> The solar industry supports over 3,000 jobs and attracts millions in investments annually.</li>
+          <li><strong>Energy Independence:</strong> Locally produced solar energy reduces reliance on imported fossil fuels, enhancing energy security.</li>
+        </ul>
+        <div class="card-reveal">
+          <p><strong>Tip:</strong> Community solar programs let renters access solar benefits without installing panels.</p>
+        </div>
+        <p class="source">Source: Wisconsin Public Service Commission, 2025</p>
+      </section>
+      <section class="card fade-in">
+        <h2>How It All Started</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <h3>2010</h3>
+            <p>Focus on Energy program launches solar rebates, sparking early adoption in Wisconsin.</p>
+          </div>
+          <div class="timeline-item fade-in">
+            <h3>2015</h3>
+            <p>Wisconsin reaches 100 MW of solar capacity, driven by federal tax credits.</p>
+          </div>
+          <div class="timeline-item fade-in">
+            <h3>2020</h3>
+            <p>Large-scale solar farms, like Badger Hollow, begin construction, boosting capacity.</p>
+          </div>
+          <div class="timeline-item fade-in">
+            <h3>2025</h3>
+            <p>Solar capacity hits 3,000 MW, powering 450,000 homes annually.</p>
+          </div>
+        </div>
+        <div class="card-reveal">
+          <p><strong>Quick Fact:</strong> The Badger Hollow Solar Farm, completed in 2021, generates 300 MW, enough for 90,000 homes.</p>
+        </div>
+        <p class="source">Source: Wisconsin Public Service Commission, 2025</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

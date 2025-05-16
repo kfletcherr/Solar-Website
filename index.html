@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Power in Wisconsin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1>Solar Power in Wisconsin</h1>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="why.html">Why Solar Matters</a></li>
+        <li><a href="economic.html">Economic Impact</a></li>
+        <li><a href="environment.html">Environmental Impact</a></li>
+        <li><a href="challenges.html">Challenges & Future</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigation Arrows -->
+  <a href="resources.html" class="nav-arrow left-arrow"></a>
+  <a href="why.html" class="nav-arrow right-arrow"></a>
+
+  <main class="content">
+    <section class="card fade-in">
+      <img src="images/Solarmain.jpg" alt="Solar panels in a Wisconsin field under a clear sky" class="card-image">
+      <h2>Solar Power in Wisconsin</h2>
+      <p>Solar energy is becoming a bigger part of Wisconsin’s power system, with over 3,000 MW of capacity installed 
+        as of 2025. It offers some clear benefits, like reducing emissions and creating jobs, but it also comes with
+         challenges, like weather limitations and high upfront costs. After researching and building this site, 
+         I think solar has potential, but it’s not a perfect solution. There are pros and cons, and it’s important 
+         to understand both when thinking about the future of energy in Wisconsin.</p>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>3,000+ Jobs</h3>
+          <p>Created by solar projects in 2025.</p>
+        </div>
+        <div class="stat-item">
+          <h3>2.6M Tons</h3>
+          <p>CO2 emissions reduced in 2025.</p>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <p><strong>Quick Fact:</strong> Wisconsin’s solar growth has attracted $2 billion in investments since 2020, boosting local economies.</p>
+      </div>
+      <p class="source">Source: Solar Energy Industries Association (SEIA), 2025</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
